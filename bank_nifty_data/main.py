@@ -19,3 +19,4 @@ read_df = spark.read.csv(
     './bank_nifty_data/banknifty.csv', header=True, inferSchema=True)
 
 read_df.show()
+
