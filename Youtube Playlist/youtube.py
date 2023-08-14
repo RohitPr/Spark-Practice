@@ -40,12 +40,12 @@ if __name__ == "__main__":
 
     video_urls = get_video_urls_from_playlist(playlist_url)
 
-    # if video_urls:
-    #     print("Video URLs in the playlist:")
-    #     for video_url in video_urls:
-    #         download_high_bitrate_audio(video_url, download_path)
-    # else:
-    #     print("No video URLs found in the playlist.")
+    if video_urls:
+        print("Video URLs in the playlist:")
+        for video_url in video_urls:
+            download_high_bitrate_audio(video_url, download_path)
+    else:
+        print("No video URLs found in the playlist.")
 
     input_folder = download_path  # Replace with the path to your folder containing WebM files
     output_folder = "./conv_songs"  # Replace with the path where you want to save the MP3 files
